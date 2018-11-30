@@ -15,6 +15,7 @@ if [ ! -f "v2ray" ]; then
   mv /v2ray/v2ray-v$VER-linux-64/geosite.dat .
 fi
 
+echo -e "$CONFIG_JSON" > config.json
 cp -f /config.json .
 chmod +x v2ray v2ctl
 sed -i "s/your_uuid/$UUID/g" config.json
