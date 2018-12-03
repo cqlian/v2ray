@@ -17,6 +17,6 @@ fi
 
 cp -f /config.json .
 echo -e "$CONFIG_JSON" > config.json
-chmod -R g+rwX /v2ray
+chmod -R rw /v2ray
 chmod +x v2ray v2ctl
 ./v2ray
