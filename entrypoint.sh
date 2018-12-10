@@ -4,8 +4,9 @@
 #  echo -e "$KEY_PEM"  > key.pem
 #fi
 
+echo  "$V2ray_ver" 
 cd /v2ray
-wget -O v2ray.zip https://github.com/v2ray/v2ray-core/releases/download/v4.7.0/v2ray-linux-64.zip
+wget -O v2ray.zip https://github.com/v2ray/v2ray-core/releases/download/v"$V2ray_ver"/v2ray-linux-64.zip
 unzip v2ray.zip 
 if [ ! -f "v2ray" ]; then
   mv /v2ray/v2ray-v$VER-linux-64/v2ray .
