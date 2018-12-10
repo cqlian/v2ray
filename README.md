@@ -1,2 +1,3 @@
 # v2ray
-for the v2ray-core v4.7.0
+update "$V2ray_ver"
+ADD Environment V2ray_ver=4.8.0
